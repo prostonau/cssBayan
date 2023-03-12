@@ -53,14 +53,14 @@ h1{
 }
 
 .point_title{
-    padding: 0.8rem;
+    padding: 0rem;
     display: flex;
-    align-items:flex-start;
+    align-items: center;
     justify-content: space-between;
     font-size:1.6rem;
     font-weight: 600;
     cursor:pointer;
-    color: purple;
+    color: purple;   
 }
 
 .accordion input[type="radio"]:checked + label .point_title{   
@@ -97,7 +97,7 @@ label:hover .title_icon::after{
 
 .title_icon{
     display: none;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .accordion:hover .title_icon {
@@ -112,7 +112,7 @@ label:hover .title_icon{
 
 .accordion input[type="radio"]:checked + label .point_title .title_icon {
     transform: rotate(45deg);
-    transition: 0.77s ease;
+    transition: 0.77s ease;    
 }
 
 
