@@ -1,0 +1,289 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+
+html, body {
+    height: 100%;
+    color: black;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding: 3rem;   
+    background-color: rgb(238, 231, 199);
+}
+
+.h1div{
+    padding:0.6rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    /* margin: 100px auto; */    
+    color:rgb(55, 92, 10);
+    font-size:3rem;      
+}
+
+.accordion{
+    margin: 0 auto;     
+    max-width: 70%;   
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start:0px;    
+}
+
+.accordion li{
+    list-style: none;
+    /* width:100%; */
+    padding: 1rem 0px;;
+    margin:1rem 0px;
+    background: white;
+    padding: 1rem;    
+    border-radius: 5px;   
+    box-shadow: 0.5rem 0.5rem 0.8rem -0.1rem rgba(0,0,0,0.15),
+               -0.5rem -0.5rem 0.7rem -0.1rem rgba(255,255,255,0.7);
+                
+}
+
+.point_title{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:1.6rem;
+    font-weight: 600;
+    cursor:pointer;
+    color: purple;   
+}
+
+.accordion input[type="radio"]:checked + label .point_title{   
+    color:rgb(0, 0, 0);
+ } 
+
+.label_class{
+    cursor:pointer;
+}
+
+/* https://html5book.ru/specsimvoly-html/ */
+/* .title_icon::after{
+    content: '\271A';
+    margin: 0rem 0.5rem -0.5rem 0rem;    
+    display:none;
+} */
+
+/* .accordion input[type="radio"]:checked + label .point_title .title_icon::after{
+    content: '\2716';
+    transform: translateX(-50%);
+}
+
+
+.accordion:hover  .title_icon::after{   
+    display: block;   
+}
+
+
+label:hover .title_icon::after{ 
+    content: '\2716';
+    transition: 1s; 
+    transform: translateX(-50%);    
+}  */
+
+.title_icon{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.accordion:hover .title_icon {
+    display: flex;
+}
+
+label:hover .title_icon{
+    transform: rotate(45deg);
+    transition: 0.77s ease;
+}
+
+
+.accordion input[type="radio"]:checked + label .point_title .title_icon {
+    transform: rotate(45deg);
+    transition: 0.77s ease;    
+}
+
+
+.accordion:hover label .point_title{   
+   color:black;
+}
+
+
+input[type="radio"]{
+    display:none;
+}
+
+/* .content{
+    padding:0px 0.4rem;   
+    max-height: 0;
+    overflow: hidden;    
+    transition: 0.3s ease-out;
+    cursor:pointer;    
+}
+
+.accordion input[type="radio"]:checked + label .content{
+    max-height: 25%;
+    transition: max-height 0.75s ease-out;
+}
+
+li:hover .content{
+    transition: max-height 0.75s ease-out;
+} */
+
+
+img {  
+    display: flex; 
+    width: 50%;    
+    margin: 0% 25%;
+    transition: opacity .7s, max-height .7s;
+    opacity: 0.8;
+    max-height: 0;
+    overflow: hidden;        
+}
+
+/* .accordion input[type="radio"]:checked + label .img{ */
+.accordion input[type="radio"]:checked + label img{    
+    max-height: 111vh;
+    transition: max-height 0.97s ease-out;    
+}
+
+li:hover img{
+    max-height: 111vh; /*35rem;*/
+    transition: max-height 0.97s ease-out;
+    opacity: 1;
+}
+
+
+/* li:hover img{
+    opacity: 1.0;
+    transition: all 0.5s ease-out;    
+} */
+
+.label_class:active img {
+    opacity: 80%;
+}
+
+
+
+
+.label_class:active #l1 {
+    color:purple;
+    transition: all 0.1s;
+}
+
+.label_class:active #l2 {
+    color:purple;
+    transition: all 0.1s;
+}
+
+.label_class:active #l3 {
+    color:purple;
+    transition: all 0.1s;
+}
+
+.label_class:active #l4 {
+    color:purple;
+    transition: all 0.1s;
+}
+
+.label_class:active #l5 {
+    color:purple;
+    transition: all 0.1s;
+}
+
+.label_class:active .title_icon { /*::after*/
+    color:purple;
+    transition: all 0.1s;
+}
+
+
+
+@media (width > 820px) {
+}
+
+@media (max-width: 820px) {
+    h1{
+  
+    color:rgb(173, 115, 26);
+    font-size:2rem;      
+    }
+
+    body {           
+        padding: 2rem;
+    }
+    
+
+    img {
+        width: 60%;
+        margin-left: 20%;       
+    }
+
+    .point_title{
+        font-size:1.2rem;
+    }
+
+    .title_icon{
+        display: flex;
+        font-size: 2rem;
+    }
+    
+    .accordion:hover .title_icon {
+        display: flex;
+    }
+    
+    label:hover .title_icon{
+        transform:  rotate(45deg);
+        transition: 0.9s ease;
+    }
+
+}
+
+@media (max-width: 320px) {
+    h1{
+     
+        color:rgb(42, 68, 214);
+        font-size:1rem;      
+    }
+    
+    body {      
+        padding: 0.5rem;
+    }
+    
+    img {
+        width: 80%;
+        margin-left: 10%;       
+    }
+
+    .point_title{
+        font-size:0.6rem;
+    }
+
+    .title_icon{
+        display: flex;
+        font-size: 1rem;
+    }
+    
+    .accordion:hover .title_icon {
+        display: flex;
+    }
+    
+    label:hover .title_icon{
+        transform: rotate(45deg);
+        transition: 0.5s ease;
+    }
+    
+    
+
+}     
