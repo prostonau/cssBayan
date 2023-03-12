@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    padding: 5rem;   
+    padding: 3rem;   
     background-color: rgb(238, 231, 199);
 }
 
 .h1div{
-    padding:1.6rem 0rem;
+    padding:0.6rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +221,7 @@ li:hover img{
     }
 
     body {           
-        padding: 0rem;
+        padding: 2rem;
     }
     
 
