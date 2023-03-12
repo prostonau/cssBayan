@@ -148,7 +148,7 @@ img {
     width: 50%;    
     margin: 0% 25%;
     transition: opacity .7s, max-height .7s;
-    opacity: 0.7;
+    opacity: 0.8;
     max-height: 0;
     overflow: hidden;        
 }
@@ -156,12 +156,13 @@ img {
 /* .accordion input[type="radio"]:checked + label .img{ */
 .accordion input[type="radio"]:checked + label img{    
     max-height: 111vh;
-    transition: max-height 0.97s ease-out;
+    transition: max-height 0.97s ease-out;    
 }
 
 li:hover img{
     max-height: 111vh; /*35rem;*/
     transition: max-height 0.97s ease-out;
+    opacity: 1;
 }
 
 
