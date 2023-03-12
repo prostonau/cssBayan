@@ -19,7 +19,7 @@ body {
 }
 
 .h1div{
-    padding:20px 0px;
+    padding:1.6rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,13 +106,13 @@ label:hover .title_icon::after{
 
 label:hover .title_icon{
     transform: rotate(45deg);
-    transition: 0.5s ease;
+    transition: 0.77s ease;
 }
 
 
 .accordion input[type="radio"]:checked + label .point_title .title_icon {
     transform: rotate(45deg);
-    transition: 0.5s ease;
+    transition: 0.77s ease;
 }
 
 
@@ -156,12 +156,12 @@ img {
 /* .accordion input[type="radio"]:checked + label .img{ */
 .accordion input[type="radio"]:checked + label img{    
     max-height: 111vh;
-    transition: max-height 0.75s ease-out;
+    transition: max-height 0.97s ease-out;
 }
 
 li:hover img{
     max-height: 111vh; /*35rem;*/
-    transition: max-height 0.75s ease-out;
+    transition: max-height 0.97s ease-out;
 }
 
 
